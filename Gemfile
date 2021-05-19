@@ -1,11 +1,10 @@
 source "https://rubygems.org"
 ruby "2.7.1"
 
+gem "govuk_template"
 gem "govuk_elements_rails"#FIX, "~> 1.2.1"
-# Access to some of the most common styles and scripts used by GDS
-gem "govuk_frontend_toolkit"#FIX, "~> 4.12.0"
-# GDS layout into which we inject content using yield and content_for
-gem "govuk_template"#FIX, "~> 0.17.0"
+gem 'govuk_frontend_toolkit', :git => "https://github.com/alphagov/govuk_frontend_toolkit_gem.git", :submodules => true
+
 # Rails engine for static pages. https://github.com/thoughtbot/high_voltage
 # NB declaring this in the engine does not seem to work, for example the routes
 # do not appear

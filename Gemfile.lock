@@ -27,6 +27,14 @@ GIT
       validates_email_format_of (~> 1.6)
       virtus (~> 1.0)
 
+GIT
+  remote: https://github.com/alphagov/govuk_frontend_toolkit_gem.git
+  revision: bf8afd715d93ec3e49225c440d14cb012bebad38
+  submodules: true
+  specs:
+    govuk_frontend_toolkit (9.0.0)
+      railties (>= 3.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -222,9 +230,6 @@ GEM
       govuk_frontend_toolkit (>= 6.0.2)
       rails (>= 4.1.0)
       sass (>= 3.2.0)
-    govuk_frontend_toolkit (9.0.0)
-      railties (>= 3.1.0)
-      sass (>= 3.2.0)
     govuk_template (0.26.0)
       rails (>= 3.1)
     has_secure_token (1.0.0)
@@ -258,7 +263,7 @@ GEM
     nesty (1.0.2)
     netrc (0.11.0)
     nio4r (2.5.7)
-    nokogiri (1.11.4)
+    nokogiri (1.11.5)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     notifications-ruby-client (5.3.0)
@@ -459,7 +464,7 @@ DEPENDENCIES
   flood_risk_engine!
   github_changelog_generator
   govuk_elements_rails
-  govuk_frontend_toolkit
+  govuk_frontend_toolkit!
   govuk_template
   high_voltage
   jquery-rails

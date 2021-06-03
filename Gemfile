@@ -59,3 +59,5 @@ group :production do
   # via Procfile)
   gem "passenger", "~> 6.0", require: "phusion_passenger/rack_handler"
 end
+
+gem "webpacker", "~> 5.4"

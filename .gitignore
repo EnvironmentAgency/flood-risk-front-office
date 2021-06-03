@@ -63,3 +63,10 @@ spec/dummy/.env
 /private/exports
 # Confirmation letters
 /private/confirmation_letters
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

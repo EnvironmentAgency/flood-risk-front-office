@@ -25,6 +25,10 @@ gem "uglifier", "~> 3.0"
 # Our capistrano scripts expect whenever (for scheduling cron jobs) to be available
 gem "whenever", "~> 0.9.4", require: false
 
+gem "defra_ruby_address",
+    git: "https://github.com/DEFRA/defra-ruby-address",
+    branch: "debug"
+
 gem "flood_risk_engine",
     git: "https://github.com/DEFRA/flood-risk-engine",
     branch: "debug"

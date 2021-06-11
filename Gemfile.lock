@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/DEFRA/defra-ruby-address
+  revision: 0859e2371d00b4d5d4a504e317d45dd2f7fad96f
+  branch: debug
+  specs:
+    defra_ruby_address (0.1.0)
+      rest-client (~> 2.0)
+
+GIT
   remote: https://github.com/DEFRA/flood-risk-engine
   revision: 279699a1d91b1b9399b335b98ece04c3fc4e7190
   branch: debug
@@ -109,8 +117,6 @@ GEM
     crass (1.0.6)
     declarative (0.0.20)
     declarative-option (0.1.0)
-    defra_ruby_address (0.1.0)
-      rest-client (~> 2.0)
     defra_ruby_alert (0.1.0)
       airbrake (~> 5.3.0)
     defra_ruby_area (2.0.0)
@@ -371,6 +377,7 @@ DEPENDENCIES
   capybara (~> 2.6.2)
   capybara-email (~> 2.5.0)
   ci_reporter_rspec (~> 1.0.0)
+  defra_ruby_address!
   dotenv-rails (~> 2.1.1)
   factory_bot_rails (~> 4.7)
   faker (~> 1.7)

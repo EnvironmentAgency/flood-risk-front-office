@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-address
-  revision: 0859e2371d00b4d5d4a504e317d45dd2f7fad96f
+  revision: 89168ddd6a4adeac352a1bb6ffd0fb469633bea7
   branch: debug
   specs:
     defra_ruby_address (0.1.0)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/flood-risk-engine
-  revision: 17bff8523c0a5b3906039efa738116f4a7fbc014
+  revision: b87436d266a99c8e44c515ed4ac9b26584c96a71
   branch: debug
   specs:
     flood_risk_engine (1.0.2)

@@ -15,7 +15,11 @@ class CookiesController < ApplicationController
   end
 
   def update
-    cookies.to_hash.each_pair { |k, _v| cookies.delete k }
+    # Google writes the cookies as ".hostname"
+    # so we need to state the domain when removing
+    cookies.to_hash.each_pair do |k, _v|
+      cookies.delete k, domain: ".#{request.hostname}"
+    end
 
     if params[:analytics] == "accept"
       write_cookie(:cookies_policy, :analytics_accepted)
